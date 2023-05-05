@@ -1,0 +1,1 @@
+Todos os exercícicos propostos durante o curso de frontend da awari estatão neste repositório. 
