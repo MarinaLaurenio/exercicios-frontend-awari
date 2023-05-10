@@ -1,0 +1,74 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+  margin: 0;
+  background: linear-gradient(to right, #e8cbc0, #636fa4);
+}
+
+#form-box {
+  width: 300px;
+  height: 400px;
+  border: 1px solid transparent;
+  border-radius: 5%;
+  background-color: #636fa4cc;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: #ffffff;
+}
+
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 250px;
+}
+
+input {
+  margin-top: 10px;
+  width: 243px;
+  height: 20px;
+}
+
+textarea {
+  resize: none;
+  margin: 10px 0;
+}
+
+button {
+  padding: 5px;
+  border: 1px solid transparent;
+  border-radius: 5%;
+  background-color: #424242;
+  color: #ffffff;
+}
+
+button:hover {
+  animation: shake 0.8s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(0px, 0px);
+  }
+
+  25% {
+    transform: translate(-5px, 0px);
+  }
+
+  50% {
+    transform: translate(0px, 0px);
+  }
+
+  75% {
+    transform: translate(5px, 0px);
+  }
+
+  100% {
+    transform: translate(0px, 0px);
+  }
+}
