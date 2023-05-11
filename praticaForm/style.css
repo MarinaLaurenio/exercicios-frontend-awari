@@ -22,14 +22,12 @@ body {
 }
 
 #contact-form {
-  display: flex;
-  flex-direction: column;
+  display: grid;
   width: 250px;
 }
 
 input {
   margin-top: 10px;
-  width: 243px;
   height: 20px;
 }
 
