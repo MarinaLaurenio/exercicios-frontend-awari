@@ -22,8 +22,9 @@ body {
 }
 
 #contact-form {
-  display: grid;
+  display: flex;
   width: 250px;
+  flex-direction: column;
 }
 
 input {
