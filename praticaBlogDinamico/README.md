@@ -1,0 +1,1 @@
+O exercício proposto solicitava criar uma página web que contenha alguns posts listados, exibir posts na página usando JavaScript, estilizar (formatar) os elementos da página usando CSS.
