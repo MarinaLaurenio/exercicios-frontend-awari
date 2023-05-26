@@ -1,0 +1,1 @@
+Nesta prática, a tarefa é recriar visualmente, na tela do navegador, o que consta nesta imagem(https://raw.githubusercontent.com/vinifortunato/grid/main/image.png). Deverá ser usado CSS Grid nesta construção.
