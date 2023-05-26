@@ -1,0 +1,1 @@
+Nesta prática, a tarefa será recriar visualmente, na tela do navegador, o que consta nesta imagem (https://raw.githubusercontent.com/vinifortunato/flexbox/main/image.png). Deverá ser usado CSS Flexbox nesta construção.
