@@ -12,7 +12,7 @@ export default function ExerciseTwo() {
   return (
     <>
       <p>Contagem de 10 a 1:</p>
-      <pre>{number}</pre>
+      <span>{number}</span>
       <button onClick={sub}>Subtrair</button>
     </>
   );

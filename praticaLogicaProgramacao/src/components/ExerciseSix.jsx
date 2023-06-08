@@ -32,7 +32,7 @@ export default function ExerciseSix() {
         onChange={handleChange}
       />
       <button onClick={generateTable}>Gerar tabuada</button>
-      <pre>
+      <span>
         {table.length > 0 && (
           <div>
             {table.map((row, index) => (
@@ -40,7 +40,7 @@ export default function ExerciseSix() {
             ))}
           </div>
         )}
-      </pre>
+      </span>
     </>
   );
 }

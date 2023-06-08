@@ -38,8 +38,8 @@ export default function ExerciseSeven() {
         onChange={handleChange}
       />
       <button onClick={generateList}>Gerar tabuada</button>
-      <pre>{evenList}</pre>
-      <pre>{oddList}</pre>
+      <span>{evenList}</span>
+      <span>{oddList}</span>
     </>
   );
 }

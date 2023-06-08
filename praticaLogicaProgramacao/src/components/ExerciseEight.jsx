@@ -69,7 +69,7 @@ export default function ExerciseEight() {
         onChange={(event) => handleChange(event, setNumber5)}
       />
       <button onClick={mediaIdades}> Ver média</button>
-      <pre>{media}</pre>
+      <span>{media}</span>
     </>
   );
 }

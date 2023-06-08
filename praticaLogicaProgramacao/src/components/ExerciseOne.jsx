@@ -12,7 +12,7 @@ export default function ExerciseOne() {
   return (
     <>
       <p>Contagem de 1 a 10:</p>
-      <pre>{number}</pre>
+      <span>{number}</span>
       <button onClick={add}>Somar</button>
     </>
   );

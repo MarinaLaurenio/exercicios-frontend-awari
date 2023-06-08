@@ -10,6 +10,7 @@ import ExerciseEight from "./components/ExerciseEight.jsx";
 import ExerciseNine from "./components/ExerciseNine";
 import ExerciseTen from "./components/ExerciseTen";
 import ExerciseEleven from "./components/ExerciseEleven";
+import ExerciseFour from "./components/ExerciseFour";
 
 function App() {
   return (
@@ -22,6 +23,9 @@ function App() {
       </Card>
       <Card title="Exercício 03">
         <ExerciseThree/>
+      </Card>
+      <Card title="Exercício 04">
+        <ExerciseFour/>
       </Card>
       <Card title="Exercício 05">
         <ExerciseFive/>

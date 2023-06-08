@@ -23,7 +23,7 @@ export default function ExerciseFive() {
     <>
       <p>Tabuada dos números de 1 a 10 usando laços de repetição:</p>
       <button onClick={generateTable}>Gerar tabuada</button>
-      <pre>
+      <span>
         {table.map((row, index) => (
           <div key={index}>
             {row.map((calculation, idx) => (
@@ -35,7 +35,7 @@ export default function ExerciseFive() {
             <br />
           </div>
         ))}
-      </pre>
+      </span>
     </>
   );
 }

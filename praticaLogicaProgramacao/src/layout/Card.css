@@ -3,7 +3,7 @@
     flex-direction: column;
     width: 400px;
     height: 380px;
-    overflow-y: auto;
+    overflow: auto;
     border: 1px solid rgb(70, 70, 70);
     box-sizing: border-box;
     border-radius: 10px;
@@ -41,6 +41,12 @@
     text-align: justify;
 }
 
+.content span {
+    font-family: monospace;
+    font-size: 18px;
+    
+}
+
 .content input {
     height: 1.5rem;
 }
@@ -50,3 +56,4 @@
     border: transparent;
     border-radius: 0.5rem;
 }
+

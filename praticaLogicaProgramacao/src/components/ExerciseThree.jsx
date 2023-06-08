@@ -23,7 +23,7 @@ export default function ExerciseThree() {
         id="input"
       />
       <button onClick={handleCountClick}>Contagem</button>
-      <pre>{count}</pre>
+      <span>{count}</span>
     </>
   );
 }
