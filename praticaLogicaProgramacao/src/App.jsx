@@ -6,6 +6,10 @@ import ExerciseThree from "./components/ExerciseThree";
 import ExerciseSix from "./components/ExerciseSix";
 import Card from "./layout/Card";
 import ExerciseSeven from './components/ExerciseSeven';
+import ExerciseEight from "./components/ExerciseEight.jsx";
+import ExerciseNine from "./components/ExerciseNine";
+import ExerciseTen from "./components/ExerciseTen";
+import ExerciseEleven from "./components/ExerciseEleven";
 
 function App() {
   return (
@@ -27,6 +31,18 @@ function App() {
       </Card>
       <Card title="Exercício 07">
         <ExerciseSeven/>
+      </Card>
+      <Card title="Exercício 08">
+        <ExerciseEight/>
+      </Card>
+      <Card title="Exercício 09">
+        <ExerciseNine/>
+      </Card>
+      <Card title="Exercício 10">
+        <ExerciseTen/>
+      </Card>
+      <Card title="Exercício 11">
+        <ExerciseEleven/>
       </Card>
     </div>
   );

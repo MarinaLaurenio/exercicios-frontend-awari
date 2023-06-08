@@ -20,22 +20,22 @@ export default function ExerciseFive() {
   };
 
   return (
-    <div>
+    <>
       <p>Tabuada dos números de 1 a 10 usando laços de repetição:</p>
       <button onClick={generateTable}>Gerar tabuada</button>
-      <br />
-
-      {table.map((row, index) => (
-        <div key={index}>
-          {row.map((calculation, idx) => (
-            <span key={idx}>
-              {calculation}
-              <br />
-            </span>
-          ))}
-          <br />
-        </div>
-      ))}
-    </div>
+      <pre>
+        {table.map((row, index) => (
+          <div key={index}>
+            {row.map((calculation, idx) => (
+              <span key={idx}>
+                {calculation}
+                <br />
+              </span>
+            ))}
+            <br />
+          </div>
+        ))}
+      </pre>
+    </>
   );
 }

@@ -10,10 +10,10 @@ export default function ExerciseTwo() {
   };
 
   return (
-    <div>
+    <>
       <p>Contagem de 10 a 1:</p>
-      <p>{number}</p>
+      <pre>{number}</pre>
       <button onClick={sub}>Subtrair</button>
-    </div>
+    </>
   );
 }

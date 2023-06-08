@@ -1,12 +1,14 @@
 .Card {
     display: flex;
     flex-direction: column;
-    width: 300px;
-    height: max-content;
+    width: 400px;
+    height: 380px;
+    overflow-y: auto;
     border: 1px solid rgb(70, 70, 70);
+    box-sizing: border-box;
     border-radius: 10px;
     margin: 10px;
-    padding: 15px;
+    padding: 30px;
     background-color: rgb(236, 236, 236);
     box-shadow: 8px 8px 8px rgba(236, 236, 236);
 }
@@ -22,9 +24,29 @@
 }
 
 .content {
-    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-self: center;
+    gap: 10px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 20px;
     margin-top: 0;
     color: black;
+    
+}
+
+.content p {
+    font-size: 18px;
+    text-align: justify;
+}
+
+.content input {
+    height: 1.5rem;
+}
+
+.content button {
+    background-color: #83a0b1;
+    border: transparent;
+    border-radius: 0.5rem;
 }

@@ -10,10 +10,10 @@ export default function ExerciseOne() {
   };
 
   return (
-    <div>
+    <>
       <p>Contagem de 1 a 10:</p>
-      <p>{number}</p>
+      <pre>{number}</pre>
       <button onClick={add}>Somar</button>
-    </div>
+    </>
   );
 }

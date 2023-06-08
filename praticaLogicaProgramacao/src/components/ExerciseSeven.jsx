@@ -21,8 +21,8 @@ export default function ExerciseSeven() {
         numeroImpar.push(i);
       }
     }
-    setEvenList(numeroPar.join(", "));
-    setOddList(numeroImpar.join(", "));
+    setEvenList("Pares: " + numeroPar.join(", ") + ";");
+    setOddList("ímpares: " + numeroImpar.join(", ") + ";");
   };
 
   return (
@@ -38,12 +38,8 @@ export default function ExerciseSeven() {
         onChange={handleChange}
       />
       <button onClick={generateList}>Gerar tabuada</button>
-      <br />
-      <div>
-        <span>Pares: {evenList}.</span>
-        <br />
-        <span>Ímpares: {oddList}.</span>
-      </div>
+      <pre>{evenList}</pre>
+      <pre>{oddList}</pre>
     </>
   );
 }

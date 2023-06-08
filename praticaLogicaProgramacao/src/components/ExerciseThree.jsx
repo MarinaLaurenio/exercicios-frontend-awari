@@ -15,16 +15,15 @@ export default function ExerciseThree() {
   };
 
   return (
-    <div>
+    <>
       <p>Recebe um número inteiro e mostra a contagem de 1 até ele:</p>
       <input
         type="number"
         placeholder="Digite um número inteiro e positivo"
         id="input"
       />
-      <button onClick={handleCountClick}>Mostrar contagem</button>
-      <br />
-      <span>{count}</span>
-    </div>
+      <button onClick={handleCountClick}>Contagem</button>
+      <pre>{count}</pre>
+    </>
   );
 }

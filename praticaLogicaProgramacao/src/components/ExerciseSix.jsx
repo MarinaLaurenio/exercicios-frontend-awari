@@ -23,7 +23,7 @@ export default function ExerciseSix() {
   };
 
   return (
-    <div>
+    <>
       <p>Tabuada do número escolhido:</p>
       <input
         type="number"
@@ -32,14 +32,15 @@ export default function ExerciseSix() {
         onChange={handleChange}
       />
       <button onClick={generateTable}>Gerar tabuada</button>
-      <br />
-      {table.length > 0 && (
-        <div>
-          {table.map((row, index) => (
-            <div key={index}>{row}</div>
-          ))}
-        </div>
-      )}
-    </div>
+      <pre>
+        {table.length > 0 && (
+          <div>
+            {table.map((row, index) => (
+              <div key={index}>{row}</div>
+            ))}
+          </div>
+        )}
+      </pre>
+    </>
   );
 }
