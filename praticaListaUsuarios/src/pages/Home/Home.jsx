@@ -8,7 +8,7 @@ export default function HomePage() {
   const handleClick = (item) => {
     const { id } = item;
     navigate(`/details/${id}`);
-    console.log("chamando 2");
+    console.log("detalhe item");
   };
 
   return (

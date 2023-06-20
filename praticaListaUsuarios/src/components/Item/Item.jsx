@@ -1,7 +1,7 @@
 export default function Item({ item, onItemClick }) {
   const handleClick = () => {
     onItemClick && onItemClick(item);
-    console.log("chamando")
+    console.log("chamando item")
   };
 
   return (
