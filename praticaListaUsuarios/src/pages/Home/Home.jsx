@@ -8,13 +8,12 @@ export default function HomePage() {
   const handleClick = (item) => {
     const { id } = item;
     navigate(`/details/${id}`);
-    console.log("detalhe item");
   };
 
   return (
     <div>
       <h1>HOME</h1>
-      <List content={users} onItemClick={handleClick} />
+      <List items={users} onItemClick={handleClick} />
     </div>
   );
 }
