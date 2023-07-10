@@ -14,7 +14,7 @@ export default function Card({ data = [] }) {
   })
 
   return (
-    <div className="card">
+    <div className="card" data-testid="card" >
       {dadosMap}
     </div>
   );

@@ -1,11 +1,9 @@
 import { render, screen } from "@testing-library/react";
-import Card from './Card';
-
-
+import Card from "./Card";
 
 describe("Card Component", () => {
   it("should render correctly", () => {
-    render(<Card/>);
+    render(<Card />);
     expect(screen.getByTestId("card")).toBeInTheDocument();
   });
 });
