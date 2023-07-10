@@ -2,12 +2,12 @@
 import "./ItemCard.css";
 import Heart from "../Heart/Heart";
 import { useDispatch, useSelector } from "react-redux";
-import { favoritesActions } from '../../store/favorites';
+import { favoritesActions } from "../../store/favorites";
 
 export default function ItemCard({ item }) {
-  const favorites = useSelector(({favorites}) => favorites)
-  const dispatch = useDispatch
-  
+  const favorites = useSelector(({ favorites }) => favorites);
+  const dispatch = useDispatch();
+
   const { name, sprites } = item;
   const sprite = sprites.other["official-artwork"].front_default;
   const isFavorite = favorites.includes(item.id);

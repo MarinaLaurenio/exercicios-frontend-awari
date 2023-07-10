@@ -1,31 +1,20 @@
 import { useEffect, useState } from "react";
-import { useDispatch } from "react-redux";
-import { favoritesActions } from "../../store/favorites";
 import Card from "../Card/Card";
 import "./ReadAll.css";
 
 export default function ReadAll() {
-  const dispatch = useDispatch();
-  const [items, setItems] = useState([]);
+  const [dadosAPI, setdadosAPI] = useState([]);
 
-  const loadDetails = (items) => {
-    const promises = items.map((item) => {
-      return fetch(item.url).then((response) => response.json());
+  const loadDetails = (dadosAPI) => {
+    const promises = dadosAPI.map((data) => {
+      return fetch(data.url).then((response) => response.json());
     });
     Promise.all(promises).then((data) => {
-      setItems(data);
+      setdadosAPI(data);
     });
   };
 
   useEffect(() => {
-    //Inicialização
-    const localData = localStorage.getItem("react-redux");
-    if (localData) {
-      const parsed = JSON.parse(localData);
-      const { favorites } = parsed;
-      dispatch(favoritesActions.init(favorites));
-    }
-
     fetch("https://pokeapi.co/api/v2/pokemon?limit=20")
       .then((response) => {
         return response.json();
@@ -37,7 +26,7 @@ export default function ReadAll() {
       .catch(() => {
         console.error("Error");
       });
-  }, [dispatch]);
+  }, []);
 
   return (
     <>
@@ -48,7 +37,7 @@ export default function ReadAll() {
         />
       </header>
       <div className="readall">
-        <Card items={items} />
+        <Card data={dadosAPI} />
       </div>
     </>
   );

@@ -1,10 +1,11 @@
 import ReadAll from "./components/ReadAll/ReadAll";
 
-export default function App() {
+function App() {
   return (
-    <div>
+    <>
       <ReadAll />
-    </div>
+    </>
   );
 }
 
+export default App;
