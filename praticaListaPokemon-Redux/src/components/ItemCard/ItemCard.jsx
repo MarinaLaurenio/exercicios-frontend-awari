@@ -25,7 +25,7 @@ export default function ItemCard({ item }) {
       <h2>Pokémon:</h2>
       <h3>{name}</h3>
       <img className="data-img" src={sprite} alt={name} />
-      <div>
+      <div className="list-item-heart-wrapper">
         <Heart onClick={handleClick} selected={isFavorite} />
       </div>
     </div>
