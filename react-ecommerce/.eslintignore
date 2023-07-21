@@ -1,0 +1,3 @@
+#ignore files: 
+.eslintrc.cjs
+commitlint.config.cjs

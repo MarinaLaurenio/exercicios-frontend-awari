@@ -1,0 +1,19 @@
+.product-display-wrapper {
+	display: flex;
+	flex-direction: column;
+	width: 200px;
+	border: solid 1px lightgray;
+}
+
+.product-display-container {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+}
+
+.product-display-image {
+	object-fit: contain;
+	max-width: 100%;
+	width: 150px;
+	height: 150px;
+}
